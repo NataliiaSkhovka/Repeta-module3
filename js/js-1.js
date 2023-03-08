@@ -50,3 +50,30 @@ const singupData = {
 };
 
 console.log(singupData);
+
+//=======
+//<input name`color`value=`tomato`>
+const inputName = `color`;
+const inputValue = `tomato`;
+
+const colorPickerData = {
+  [inputName]: inputValue,
+};
+console.log(colorPickerData);
+
+//=======
+const playlist = {
+  name: "Мой супер плейлист",
+  rating: 5,
+  tracks: [1, 2, 3],
+  trackCount: 3,
+};
+playlist.qwe = 5;//добавить свойство, если оно было, то перезаписывается
+
+console.log(playlist);
+
+//======
+const a = {x: 1, y: 2};
+const b = a;
+
+console.log(b === a);//true
