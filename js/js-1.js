@@ -77,3 +77,45 @@ const a = {x: 1, y: 2};
 const b = a;
 
 console.log(b === a);//true
+//=====
+const atTheOldToad = {
+  potions: [
+    { name: "Speed potion", price: 460 },
+    { name: "Dragon breath", price: 780 },
+    { name: "Stone skin", price: 520 },
+  ],
+  // Change code below this line
+  getPotions() {
+    return this.potions;
+  },
+  
+  addPotion(newPotion) {
+    for (let i = 0; i < this.potions.length, i += 1) {
+    if (this.potions[i].name === newPotion.name) {
+      
+      return `Error! Potion ${newPotion.name} is already in your inventory!`;
+    }
+    }
+   this.potions.push(newPotion);
+  },
+  
+  removePotion(potionName) {
+    for (let i = 0; i < this.potions.length; i += 1){
+if (this.potions[i].name === potionName){
+    
+} return `Potion ${potionName} is not in inventory!`;
+    }
+  },
+  updatePotionName(oldName, newName){
+    for (let i = 0; i < this.potions.length; i += 1){
+    if (this.potions[i].name === oldName) {
+      this.potions[i].name = newName;
+    
+    return;
+    }
+    }
+    },
+
+  
+  // Change code above this line
+};
